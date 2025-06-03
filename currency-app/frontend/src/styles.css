@@ -1,0 +1,15 @@
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+body{
+    background-color: aliceblue;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 5px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+table{
+    width: 80%;
+}

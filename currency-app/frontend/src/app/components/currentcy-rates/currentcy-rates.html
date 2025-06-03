@@ -1,0 +1,27 @@
+<div>
+  <label>Data:</label>
+  <input [(ngModel)]="targetDate" type="date" />
+  <button (click)="fetch()">Pobierz dane</button>
+
+  <p *ngIf="message" style="color: green">{{ message }}</p>
+  <p *ngIf="error" style="color: red">{{ error }}</p>
+
+  <table *ngIf="currencies.length">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Waluta</th>
+        <th>Kod</th>
+        <th>Kurs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of currencies">
+        <td>{{ c.date }}</td>
+        <td>{{ c.currency }}</td>
+        <td>{{ c.code }}</td>
+        <td>{{ c.rate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
