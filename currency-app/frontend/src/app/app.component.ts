@@ -9,7 +9,10 @@ declare const sorttable: any;
   standalone: true,
   imports: [CommonModule],
   template: `
+  <div>
     <h1>Kursy walut</h1>
+  </div>
+  <div>
     <button (click)="load()">Załaduj</button>
 
     <table class="sortable" id="ratesTable">
@@ -30,7 +33,7 @@ declare const sorttable: any;
         </tr>
       </tbody>
     </table>
-
+</div>
   `
 })
 export class AppComponent {

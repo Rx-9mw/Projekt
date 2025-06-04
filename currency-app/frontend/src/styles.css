@@ -2,14 +2,48 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
     content: " \25B4\25BE" 
 }
 body{
-    background-color: aliceblue;
+    background-color: rgb(112, 230, 200);
 }
 th, td {
   padding: 15px;
   text-align: left;
-  border: 5px solid #ddd;
+  border: 0px solid #ddd;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {background-color: #ffffff;}
+tr:nth-child(odd) {background-color: #f2f2f2;}
+thead tr th{
+    background-color: #7fffd4;
+    border-color: black;
+}
 table{
-    width: 80%;
+    width: 90%;
+    margin: auto;
+}
+div {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+button {
+    
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    padding: 12px 24px;
+                    border: 0;
+                    color: #3a4149;
+                    background: #c5ffec;
+                    line-height: 1.15;
+                    font-size: 16px;
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+}
+h1{
+    margin:10px;
+    padding: 10px;
+    text-align: center;
 }
